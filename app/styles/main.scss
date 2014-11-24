@@ -26,7 +26,7 @@ h2{
 }
 
 article{
-    width: 742px;
+    width: auto;
 }
 
 .hero-unit {
@@ -113,20 +113,12 @@ article{
     padding-left: 28px;
 
     h2{
-        margin: 25px 0 10px 0;
+        margin: 25px 0 15px 0;
         font-family: $font;
         font-weight: $light;
         text-transform: uppercase;
     }
    
-    span{
-        margin: 0 20px 20px 0;
-        color: $color-gris-oscuro;
-        font-size: $font-medium;
-        font-family: $font;
-        font-weight: $regular;
-    }
-
     img{
         margin-top: 20px;
     }
@@ -152,6 +144,7 @@ article{
 .button{
     padding: 13px 70px;
     background-color: $color-gris-oscuro;
+    margin-bottom: 20px;
 
     font-family: $font;
     font-weight: $regular;
@@ -159,10 +152,16 @@ article{
     color: white;
 }
 
-.line{
-    margin-top: 40px;
-}
-
 .subtitle{
     display: block;
+ 
+    color: $color-gris-oscuro;
+    font-size: $font-medium;
+    font-family: $font;
+    font-weight: $regular;
+}
+
+.container{
+    border-top: 1px solid #C9C9C9;
+    margin-top: 40px;
 }
