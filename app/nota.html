@@ -14,6 +14,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -33,7 +34,7 @@
         <div class="col social-bar">
             <!-- Social -->
         </div>
-        <div class="col content">
+        <div class="col content notes">
             <article>
                 <h2>Como estimar el valor de una Start-Up</h2>
                 <span class="subtitle">Posted 8 octubre 2013 / By franadmin / Blog</span>
@@ -48,7 +49,7 @@
                     Estos son:
                 </p>
 
-                <ol>
+                <ol class="content-articule">
                     <li>Método de Múltiplo Comparable.
                         <p>
                             Consiste en obtener el múltiplo Valor Compania / Ventas de una o varias empresas comparables a la startup y aplicar dicho coeficiente respecto del nivel de ventas de la propia startup en análisis.<br/>                       
@@ -72,16 +73,17 @@
                             <li>Partir de un rango de valor conforme el estadio de la Start-up
                                 <p>
                                 Una  forma de establecer un valor estimado en una Start-up tecnológica es identificar en que estadio se encuentra la misma y generar un  rango aproximado de valor respectivo.Para Start-ups de tecnología un esquema de aproximación de rango de valuación puede ser el siguiente:
-                              
+                                </p>
+
                                 <table>
-                                    <tr>
-                                        <th>Estadio de Start-up Tecnológica</th>
-                                        <th>Descripción del Estadio</th>
-                                        <th>Rango de Valor Estimado</th>
-                                        <th>Tipo de Inversor</th>
+                                    <tr class="table-top">
+                                        <th class="table-col01">Estadio de Start-up Tecnológica</th>
+                                        <th class="table-col02">Descripción del Estadio</th>
+                                        <th class="table-col03">Rango de Valor Estimado</th>
+                                        <th class="table-col04">Tipo de Inversor</th>
                                     </tr>
-                                    <tr>
-                                        <td>Idea - Concepto</td>
+                                    <tr class="table-content">
+                                        <td >Idea - Concepto</td>
                                         <td>
                                             <ul>
                                                 <li>Business plan en desarrollo</li>
@@ -89,10 +91,10 @@
                                                 <li>Solo fundadores, team incompleto</li>
                                             </ul>
                                         </td>
-                                        <td>U$S 100K - U$S 750K</td>
+                                        <td><span>U$S 100K - U$S 750K</span></td>
                                         <td>Friends & Family</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="table-content">
                                         <td>Avance de Desarrollo</td>
                                         <td>
                                             <ul>
@@ -102,10 +104,10 @@
                                                 <li>Ventas iniciales</li>
                                             </ul>
                                         </td>
-                                        <td>U$S 750K- U$S 3M</td>
+                                        <td><span>U$S 750K- U$S 3M</span></td>
                                         <td>Angeles - Aceleradoras</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="table-content table-border">
                                         <td>Tracción Comercial</td>
                                         <td>
                                             <ul>
@@ -116,10 +118,10 @@
                                                 <li>Marketing en desarrollo</li>
                                             </ul>
                                         </td>
-                                        <td>U$S 3M- U$S 10M</td>
+                                        <td><span>U$S 3M- U$S 10M</span></td>
                                         <td>Venture Capital</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="table-content table-border">
                                         <td>Expansion y Escala</td>
                                         <td>
                                             <ul>
@@ -130,7 +132,7 @@
                                                 <li>Metodología y procesos establecidos</li>
                                             </ul>
                                         </td>
-                                        <td>U$S 10M- U$S 100M</td>
+                                        <td><span>U$S 10M- U$S 100M</span></td>
                                         <td>Venture Capital & Private Equity</td>
                                     </tr>
                                 </table>
@@ -169,18 +171,20 @@
                 </p>
             </article>
 
-            <section class= "comments-container">
-                <h4>Comentarios (2)</h4>
-                    <div>
-                        <h5>Admin</h5>
+            <section class="container">
+                <h4>COMENTARIOS (2)</h4>
+                    <div class="avatar">
+                        <h5>ADMIN</h5>
                         <span>8 de octubre, 2013</span>
                         <p>
                             En un FFLD se pronostican varios años de ingresos y gastos para luego descontar el flujo de fondos derivado de operatividad del modelo de negocio proyectado utilizando un índice de capital de riesgo de retorno esperado. Este modelo es sofisticado y genera para el inversor una sensación de profesionalismo analítico. 
                         </p>
                     </div>
+                    
+                    <div class="container" />
 
-                    <div>
-                        <h5>Tim Tim</h5>
+                    <div class="avatar">
+                        <h5>TIM TIM</h5>
                         <span>8 de octubre, 2013</span>
                         <p>
                             En un FFLD se pronostican varios años de ingresos y gastos para luego descontar el flujo de fondos derivado de operatividad del modelo de negocio proyectado utilizando un índice de capital de riesgo de retorno esperado. Este modelo es sofisticado y genera para el inversor una sensación de profesionalismo analítico. 
@@ -188,14 +192,14 @@
                     </div>
             </section>
 
-            <section>
+            <section class="container">
                 <h4>Dejá un comentario</h4>
                 <form action="MAILTO:example@email.com" ENCTYPE="text/plain" method="GET">
-                    <input type="text" name="name" placeholder="Enter your Name..." />
-                    <input type="text" name="email" placeholder="Enter your Email Address" />
-                    <input type="text" name="website" placeholder="Enter your Website" />
-                    <textarea name="comentarios" rows="12" cols="60" placeholder= "Enter ..."></textarea>
-                    <input type="submit" value="ENVIAR">
+                    <input type="text" name="name" placeholder="Enter your Name..." class="box-form" />
+                    <input type="text" name="email" placeholder="Enter your Email Address" class="box-form" />
+                    <input type="text" name="website" placeholder="Enter your Website" class="box-form" />
+                    <textarea name="comentarios" rows="12" cols="60" placeholder= "Enter ..." class="box-form box-com" ></textarea>
+                    <input type="submit" value="ENVIAR" class="button">
                 </form>
             </section>
 

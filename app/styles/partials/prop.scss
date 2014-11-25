@@ -4,7 +4,7 @@ $color-gris: #BDBCBC;
 $color-gris-oscuro: #8E8E8E;
 $color-petroleo: #21282E;
 $color-blanco: #ffffff;
-$color-negro: #000000;
+$color-negro: #494949;
 
 $font: 'Lato', Helvetica, sans-serif;
 $light: 300;
@@ -18,3 +18,10 @@ $font-Xmedium: 18px;
 $font-large: 24px;
 $font-Xlarge: 32px;
 $font-titulo: 42px;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}

@@ -11,7 +11,7 @@ body {
     padding: 0;
 
     background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
 
@@ -92,7 +92,7 @@ article{
 
     &:before{
         left: 20%;
-        background: #ff6100;
+        background: $color-naranja;
     }
 }
 
@@ -105,7 +105,7 @@ article{
 
     &:before{
         background: #fff;
-        left: 40%;
+        left: 25%;
     }
 }
 
@@ -133,7 +133,7 @@ article{
 
     p{
         color: $color-negro;
-        font-size: $font-small;
+        font-size: $font-Xsmall;
         font-family: $font;
         font-weight: $regular;
         margin-bottom: 35px;
@@ -164,4 +164,124 @@ article{
 .container{
     border-top: 1px solid #C9C9C9;
     margin-top: 40px;
+
+}
+
+/* CSS STYLE NOTA */
+
+.content-articule{
+    margin-left: -18px;
+        
+    li{
+        color: $color-petroleo;
+        font-weight: $bold;
+        
+    }
+    li p{
+        margin-left: -20px;
+    }
+    li ol table{
+        margin-left: -60px;
+    }
+
+}
+table{
+    padding-top:10px;
+    padding-bottom:20px;
+    
+}
+.table-top{
+    background-color: $color-naranja;
+    width: 180px;
+    th{
+    color: $color-blanco;
+    font-size: 12px;
+    font-family: $font;
+    font-weight: $regular;
+    padding: 5px 30px 5px 20px;
+
+    }
+}
+.table-content{
+    background-color: #f1f1f1;
+    color: $color-petroleo;
+    font-size: 14px;
+    font-family: $font;
+    font-weight: $regular;
+
+    td{
+        padding: 15px 10px 15px 20px;  
+        span{
+            color: $color-petroleo;
+            font-size: 14px;
+            font-family: $font;
+            font-weight: $bold;
+        }
+
+    }
+    td ul li{
+        font-size: 12px;
+        margin-left: -25px;
+    }
+    
+}
+
+.table-col01{
+    width: 170px;
+}
+.table-col02{
+    width: 250px;
+}
+.table-col03{
+    width: 200px;
+}
+.table-col04{
+    width: 150px;
+}
+
+.container{
+   h4{
+    color: $color-naranja;
+}
+}
+ .avatar:before {
+    content: url(../images/avatar-usuario.png);
+    position:absolute;
+}
+.avatar{
+    line-height: 9px;
+    h5{
+        color: $color-petroleo;
+        font-size: 19px;
+        padding-top: 10px;
+        margin-left: 90px;
+    }
+    span{
+
+        color: $color-gris-claro;
+        margin-left: 90px;
+        font-size: 14px;
+    }
+    p{
+        margin-left: 90px;
+    }
+}
+.box-form{
+    @include border-radius(5px);
+    border: 1px solid $color-gris-claro;
+    height: 50px;
+    width: 550px;
+    font-family: $font;
+    font-weight: $regular;
+    font-size: $font-medium;
+    padding-left:15px;
+    display: block;
+    margin-bottom: 15px;
+    
+
+}
+.box-com{
+    height: 200px;
+    width: 550px;
+    padding-top: 15px;
 }
