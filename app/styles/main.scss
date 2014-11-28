@@ -355,16 +355,16 @@ hr {
 
 #head-cont {
     padding-bottom: 15px;
-    }form input{
-  border-radius: 3px;
-  background-color: $color-gris-claro;
-  font-size: 15px;
-  height: 30px;
-  width: 85%;
-  margin-top: 15px;
-  margin-left: 20px;
-
-  
+    
+    form input{
+      border-radius: 3px;
+      background-color: $color-gris-claro;
+      font-size: 15px;
+      height: 30px;
+      width: 85%;
+      margin-top: 15px;
+      margin-left: 20px;
+    } 
 }
 
 #head-cont p{
@@ -373,9 +373,11 @@ hr {
 
 #head-articule h6, #head-articule p, h6{
   margin-left: 20px;
-  line-height: 15px;
+  line-height: 10px;
 }
 #head-articule h6{
     margin-bottom: 13px;
 }
+
+
 
