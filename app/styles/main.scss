@@ -23,11 +23,50 @@ a{
 h2{
     font-size: $font-titulo;
     color: $color-naranja;
-    margin: 0;
 }
 
 article{
     width: auto;
+    margin-top: 50px; 
+}
+
+table{
+    padding-top:10px;
+    padding-bottom:20px;
+    border-spacing: 0px;
+}
+
+h3{
+font-size: $font-Xlarge;
+color: #C9C9C9;
+font-family: $font;
+font-weight: $regular;
+text-align: center;
+margin: 3px;
+}
+
+figure{
+    margin: 0px;
+    img{
+        width: 100%;
+        padding-bottom: 25px;
+    }
+}
+
+h6{
+  font-size: 14px;
+  color: #EA663B;
+  text-transform: uppercase;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 }
 
 .hero-unit {
@@ -97,6 +136,53 @@ article{
     }
 }
 
+.icons-bar{
+    margin: 0 0 0 -98px;
+    display: inline-block;
+    height: auto;
+    width: 50px;
+    color: $color-icon-social;
+
+    .triangule{
+        content: url(../images/triang-nota.png) no-repeat;
+        margin: -28px 0 0 55px;
+    }
+
+    .icon-heart{
+        margin: 0 0 0 13px;
+    }
+
+    .mini-icons{
+        margin: 20px 0 0 5px;
+        padding: 10px 0 0 10px;
+        border-top: 1px solid $color-icon-social;
+    }
+
+    .vertical-line{
+        height: 50px;
+        border-left: 1px solid $color-icon-social;
+        margin: 10px 0 0 30px;
+    }
+
+    .icon-circle{
+        margin: 15px 0 0 13px;
+
+        color: $color-naranja;
+        width: 30px;
+        height: 29px;
+        padding: 8px 0 0 8px;
+        border-radius: 360px;
+        background-color: $color-icon-social;
+    }
+
+    .icon-reply{
+        margin-left: 15px;
+        margin-top: 10px;
+        color: $color-blanco;
+    }
+
+}
+
 .content, .content:before {
     width: 74%;
 }
@@ -115,7 +201,7 @@ article{
     padding-left: 28px;
 
     h2{
-        margin: 25px 0 15px 0;
+        margin: -250px 0 15px 0;
         font-family: $font;
         font-weight: $light;
         text-transform: uppercase;
@@ -128,7 +214,7 @@ article{
     h4{
         color: $color-gris-claro;
         font-size: $font-large;
-        margin: 10px 0 10px 0;
+        margin: -20px 0 10px 0;
         font-family: $font;
         font-weight: $regular;
     }
@@ -187,11 +273,7 @@ article{
     }
 
 }
-table{
-    padding-top:10px;
-    padding-bottom:20px;
-    border-spacing: 0px;
-}
+
 .table-top{
     background-color: $color-naranja;
     width: 180px;
@@ -246,17 +328,16 @@ table{
 .container{
    h4{
     color: $color-naranja;
-    padding-top: 15px;
+    padding-top: 50px;
     padding-bottom: 15px;
+    }
 }
-}
- .avatar:before {
-    content: url(../images/avatar-usuario.png);
-    position:absolute;
-}
+
 .avatar{
     line-height: 9px;
-    padding-top: -15px;
+    margin-top: -55px;
+    padding-top: 10px;
+
     h5{
         color: $color-petroleo;
         font-size: 19px;
@@ -264,7 +345,6 @@ table{
         margin-left: 90px;
     }
     span{
-
         color: $color-gris-claro;
         margin-left: 90px;
         font-size: 14px;
@@ -273,6 +353,13 @@ table{
         margin-left: 90px;
     }
 }
+
+.avatar:before {
+    content: url(../images/avatar-usuario.png);
+    position:absolute;
+    padding-top: 20px;
+}
+
 .box-form{
     @include border-radius(5px);
     border: 1px solid $color-gris-claro;
@@ -287,6 +374,7 @@ table{
     
 
 }
+
 .box-com{
     height: 200px;
     width: 550px;
@@ -304,42 +392,12 @@ table{
   margin: 25px auto;
 }
 
-h3{
-font-size: $font-Xlarge;
-color: #C9C9C9;
-font-family: $font;
-font-weight: $regular;
-text-align: center;
-margin: 3px;
-}
-figure{
-    margin: 0px;
-    img{
-        width: 100%;
-        padding-bottom: 25px;
-    }
-}
+
 #head h5{
   font-size: 18px;
   color: #EA663B;
   text-align: center;
   font-weight: lighter;
-}
-
-h6{
-  font-size: 14px;
-  color: #EA663B;
-  text-transform: uppercase;
-}
-
-hr { 
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
 }
 
 #widget{
