@@ -91,7 +91,7 @@ hr {
     padding: 0.2em 0;
 }
 
- .wrap{
+.wrap{
     position: relative;
     min-height: 100%;
 }
@@ -440,5 +440,34 @@ hr {
     margin-bottom: 13px;
 }
 
+
+@media all and (max-width: 768px){
+    .col{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .col:before{
+        content: none;
+    }
+
+    .social-bar, 
+    #head-cont,
+    #widget {
+        display: none;
+    }
+
+    .sidebar{
+         background: #333333;
+    }
+    
+    .content {
+        padding: 0 20px;
+    }
+
+    .notes img{
+        width: 100%;
+    }
+}
 
 
