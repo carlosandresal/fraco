@@ -99,7 +99,7 @@ hr {
 .col{
     display: inline-block;
     vertical-align: top;
-    padding: 20px 0px;
+    padding: 0 0px;
 
     &:before {
     content: '';
@@ -137,15 +137,22 @@ hr {
 }
 
 .icons-bar{
-    margin: 0 0 0 -98px;
-    display: inline-block;
+    position: absolute;
+    margin: 20px 0 0 -98px;
     height: auto;
-    width: 50px;
+    width: 4%;
+    vertical-align: middle;
     color: $color-icon-social;
 
     .triangule{
-        content: url(../images/triang-nota.png) no-repeat;
-        margin: -28px 0 0 55px;
+        width: 0;
+        height: 0;
+        border-right: 20px solid #ffffff;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        margin-top: -35px;
+        margin-left: 55px;
+        margin-bottom: -15px;
     }
 
     .icon-heart{
@@ -201,7 +208,7 @@ hr {
     padding-left: 28px;
 
     h2{
-        margin: -250px 0 15px 0;
+        margin: 10px 0 15px 0;
         font-family: $font;
         font-weight: $light;
         text-transform: uppercase;
@@ -214,7 +221,7 @@ hr {
     h4{
         color: $color-gris-claro;
         font-size: $font-large;
-        margin: -20px 0 10px 0;
+        margin: 20px 0 15px 0;
         font-family: $font;
         font-weight: $regular;
     }
@@ -251,8 +258,6 @@ hr {
 
 .container{
     border-top: 1px solid #C9C9C9;
-    margin-top: 40px;
-
 }
 
 /* CSS STYLE NOTA */
@@ -325,17 +330,15 @@ hr {
     width: 150px;
 }
 
-.container{
+.comments{
    h4{
     color: $color-naranja;
-    padding-top: 50px;
-    padding-bottom: 15px;
     }
 }
 
 .avatar{
     line-height: 9px;
-    margin-top: -55px;
+    margin-top: 10px;
     padding-top: 10px;
 
     h5{
