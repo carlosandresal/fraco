@@ -327,6 +327,11 @@ module.exports = function(grunt) {
                 }, {
                     src: 'node_modules/apache-server-configs/dist/.htaccess',
                     dest: '<%= config.dist %>/.htaccess'
+                }, {
+                    expand: true,
+                    src: ['bower_components/fontawesome/fonts/*'],
+                    dest: 'dist/fonts/',
+                    flatten: true
                 }]
             },
             styles: {
