@@ -219,6 +219,7 @@ hr {
 }
 
 .button{
+    border: none;
     padding: 13px 70px;
     background-color: $color-gris-oscuro;
     margin-bottom: 20px;
@@ -294,7 +295,7 @@ hr {
     }
     td ul li{
         font-size: 12px;
-        margin-left: -25px;
+        line-height: 20px;
     }
     
 }
@@ -369,6 +370,7 @@ hr {
 
 /*CSS SIDEBAR*/
 
+
 .head-img{
   border-radius: 360px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -385,8 +387,12 @@ hr {
   font-weight: lighter;
 }
 
-#widget{
+#line-widget{
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  #widget{
+    margin-left: 20px;
+    padding-right: 20px;
+  }
 }
 #head-social{
     margin-left: 20px;
@@ -417,14 +423,13 @@ hr {
 
 #head-articule h6, #head-articule a{
   margin-left: 20px;
-  line-height: 10px;
+  line-height: 1px;
 }
 #head-articule h6{
     margin-bottom: 13px;
 }
 
 ul{
-    list-style: none;
     padding-left: 0;
     line-height: 30px;
 }
@@ -434,6 +439,21 @@ ul{
     .col{
         display: inline-block;
         width: 100%;
+        figure, #head-cont {
+            text-align: center;
+            form{
+                display: none;
+            }
+            }img{
+            width: 55%;
+            
+        }
+    }
+    #head-social{
+        margin-left: -35px;
+        } a{
+        width: 10%;
+        height: 10%;
     }
 
     .col:before{
@@ -441,8 +461,7 @@ ul{
     }
 
     .social-bar, 
-    #head-cont,
-    #widget {
+    #widget, #head-articule {
         display: none;
     }
 
