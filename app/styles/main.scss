@@ -228,6 +228,10 @@ hr {
     font-weight: $regular;
     font-size: $font-large;
     color: white;
+    &:hover{
+        background-color: $color-gris;
+        color: white;
+    }
 }
 
 .subtitle{
@@ -424,9 +428,15 @@ hr {
 #head-articule h6, #head-articule a{
   margin-left: 20px;
   line-height: 1px;
+    
 }
 #head-articule h6{
     margin-bottom: 13px;
+}
+#head-articule ul li a{
+      &:hover{
+        color: white;
+    }
 }
 
 ul{
@@ -436,6 +446,7 @@ ul{
 
 
 @media all and (max-width: 768px){
+
     .col{
         display: inline-block;
         width: 100%;
@@ -449,6 +460,7 @@ ul{
             
         }
     }
+
     #head-social{
         margin-left: -35px;
         } a{
@@ -476,6 +488,11 @@ ul{
     .notes img{
         width: 100%;
     }
+    .box-com, .box-form{
+        width: 100%;
+    }
+  
+    
 }
 
 
