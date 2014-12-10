@@ -1,128 +1,111 @@
 // bower:scss
 // endbower
-@import "partials/prop";
-
-*{
+@import"partials/prop";
+* {
     box-sizing: border-box;
     text-decoration: none;
 }
-
 body {
     margin: 0;
     padding: 0;
-
     background: #fafafa;
     font-family: 'lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
-
-a{
+a {
     text-decoration: none;
 }
-
-h2{
+h2 {
     font-size: $font-titulo;
     color: $color-naranja;
 }
-
-article{
+article {
     width: auto;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
-
-table{
-    padding-top:10px;
-    padding-bottom:20px;
+article + article{
+    border-top: 1px solid #C9C9C9;
+}
+table {
+    padding-top: 10px;
+    padding-bottom: 20px;
     border-spacing: 0px;
 }
-
-h3{
-font-size: $font-Xlarge;
-color: #C9C9C9;
-font-family: $font;
-font-weight: $regular;
-text-align: center;
-margin: 3px;
+h3 {
+    font-size: $font-Xlarge;
+    color: #C9C9C9;
+    font-family: $font;
+    font-weight: $regular;
+    text-align: center;
+    margin: 3px;
 }
-
-figure{
+figure {
     margin: 0px;
-    img{
+    img {
         width: 100%;
         padding-bottom: 25px;
     }
 }
-
-h6{
-  font-size: 14px;
-  color: #EA663B;
-  text-transform: uppercase;
+h6 {
+    font-size: 14px;
+    color: #EA663B;
+    text-transform: uppercase;
 }
-
-hr { 
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
-
-.wrap{
+.wrap {
     position: relative;
     min-height: 100%;
+    padding: 0 0 50px 0;
 }
-
-.col{
+.col {
     display: inline-block;
     vertical-align: top;
     padding: 0 0px;
-
     &:before {
-    content: '';
-    bottom: 0;
-    position: absolute;
-    top: 0;
-    z-index: -1;
+        content: '';
+        bottom: 0;
+        position: absolute;
+        top: 0;
+        z-index: -1;
     }
 }
-
 .sidebar, .sidebar:before {
     width: 20%;
 }
-
 .sidebar {
     color: #ebeef3;
-
-    &:before{
+    &:before {
         background: #333333;
         left: 0;
     }
 }
-
 .social-bar, .social-bar:before {
     width: 5%;
+    min-width: 64px;
 }
-
 .social-bar {
     color: #ebeef3;
-
-    &:before{
+    &:before {
         left: 20%;
         background: $color-naranja;
     }
 }
-
-.icons-bar{
+.icons-bar {
     position: absolute;
     margin: 20px 0 0 -98px;
     height: auto;
     width: 4%;
     vertical-align: middle;
     color: $color-icon-social;
-
-    .triangule{
+    .triangule {
         width: 0;
         height: 0;
         border-right: 20px solid #ffffff;
@@ -132,26 +115,21 @@ hr {
         margin-left: 55px;
         margin-bottom: -15px;
     }
-
-    .icon-heart{
+    .icon-heart {
         margin: 0 0 0 13px;
     }
-
-    .mini-icons{
+    .mini-icons {
         margin: 20px 0 0 5px;
         padding: 10px 0 0 10px;
         border-top: 1px solid $color-icon-social;
     }
-
-    .vertical-line{
+    .vertical-line {
         height: 50px;
         border-left: 1px solid $color-icon-social;
         margin: 10px 0 0 30px;
     }
-
-    .icon-circle{
+    .icon-circle {
         margin: 15px 0 0 13px;
-
         color: $color-naranja;
         width: 30px;
         height: 29px;
@@ -159,56 +137,47 @@ hr {
         border-radius: 360px;
         background-color: $color-icon-social;
     }
-
-    .icon-reply{
+    .icon-reply {
         margin-left: 15px;
         margin-top: 10px;
         color: $color-blanco;
     }
-
-    .fa-twitter:before{
+    .fa-twitter:before {
         margin-left: -2px;
     }
-
 }
-
 .content, .content:before {
     width: 74%;
 }
-
 .content {
     color: #6d7072;
-    padding-right: 210px;
-
-    &:before{
+    &:before {
         background: #fff;
         left: 25%;
     }
 }
-
-.notes{
+.notes {
     padding-left: 28px;
+    width: 70%;
 
-    h2{
+    h2 {
         margin: 10px 0 15px 0;
         font-family: $font;
         font-weight: $light;
         text-transform: uppercase;
     }
-   
-    img{
+    img {
         margin-top: 20px;
+        max-width: 100%;
     }
-
-    h4{
+    h4 {
         color: $color-gris-claro;
         font-size: $font-large;
         margin: 20px 0 15px 0;
         font-family: $font;
         font-weight: $regular;
     }
-
-    p{
+    p {
         color: $color-negro;
         font-size: $font-Xsmall;
         font-family: $font;
@@ -217,140 +186,131 @@ hr {
         line-height: 17px;
     }
 }
-
-.button{
+.button {
     border: none;
     padding: 13px 70px;
     background-color: $color-gris-oscuro;
     margin-bottom: 20px;
-
     font-family: $font;
     font-weight: $regular;
     font-size: $font-large;
     color: white;
-    &:hover{
+    &:hover {
         background-color: $color-gris;
         color: white;
     }
 }
-
-.subtitle{
+.subtitle {
     display: block;
- 
     color: $color-gris-oscuro;
     font-size: $font-medium;
     font-family: $font;
     font-weight: $regular;
 }
-
-.container{
+.container {
     border-top: 1px solid #C9C9C9;
 }
-
 /* CSS STYLE NOTA */
 
-.content-articule{
+.content-articule {
     margin-left: -18px;
-        
-    li{
+    li {
         color: $color-petroleo;
         font-weight: $bold;
-        
     }
-    li p{
+    li p {
         margin-left: -20px;
     }
-    li ol table{
+    li ol table {
         margin-left: -60px;
     }
-
 }
-
-.table-top{
+.table-top {
     background-color: $color-naranja;
     width: 180px;
-    th{
-    border-right: 2px solid white;
-    color: $color-blanco;
-    font-size: 12px;
-    font-family: $font;
-    font-weight: $regular;
-    padding: 5px 30px 5px 20px;
-
+    th {
+        border-right: 2px solid white;
+        color: $color-blanco;
+        font-size: 12px;
+        font-family: $font;
+        font-weight: $regular;
+        padding: 5px 30px 5px 20px;
     }
 }
-.table-content{
+.table-content {
     background-color: #f1f1f1;
     color: $color-petroleo;
     font-size: 14px;
     font-family: $font;
     font-weight: $regular;
-
-    td{
+    td {
         border-top: 2px solid white;
-        padding: 15px 10px 15px 20px;  
-        span{
+        padding: 15px 10px 15px 20px;
+        span {
             color: $color-petroleo;
             font-size: 14px;
             font-family: $font;
             font-weight: $bold;
         }
-
     }
-    td ul li{
+    td ul li {
         font-size: 12px;
         line-height: 20px;
     }
-    
 }
-
-.table-col01{
+.table-col01 {
     width: 170px;
 }
-.table-col02{
+.table-col02 {
     width: 250px;
 }
-.table-col03{
+.table-col03 {
     width: 200px;
 }
-.table-col04{
+.table-col04 {
     width: 150px;
 }
-
-.comments{
-   h4{
-    color: $color-naranja;
+.comments {
+    h4 {
+        color: $color-naranja;
     }
 }
-
-.avatar{
+.avatar {
     line-height: 9px;
     margin-top: 10px;
     padding-top: 10px;
-
-    h5{
+    h5 {
         color: $color-petroleo;
         font-size: 19px;
         padding-top: 5px;
         margin-left: 90px;
     }
-    span{
+    span {
         color: $color-gris-claro;
         margin-left: 90px;
         font-size: 14px;
     }
-    p{
+    p {
         margin-left: 90px;
     }
 }
-
 .avatar:before {
     content: url(../images/avatar-usuario.png);
-    position:absolute;
+    position: absolute;
     padding-top: 20px;
 }
+.division-line{
+    width: 90%;
+    background: url(../images/division-sidebar.png);
+}
 
-.box-form{
+.division-line img {
+    max-width: 90%;
+    margin: 10px auto;
+    display: block;
+}
+
+.box-form {
     @include border-radius(5px);
     border: 1px solid $color-gris-claro;
     height: 50px;
@@ -358,141 +318,141 @@ hr {
     font-family: $font;
     font-weight: $regular;
     font-size: $font-medium;
-    padding-left:15px;
+    padding-left: 15px;
     display: block;
     margin-bottom: 15px;
-    
-
 }
-
-.box-com{
+.box-com {
     height: 200px;
     width: 550px;
     padding-top: 15px;
 }
-
-
 /*CSS SIDEBAR*/
 
-
-.head-img{
-  border-radius: 360px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 20px;
-  display: block;
-  margin: 25px auto;
+.head-img {
+    border-radius: 360px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    display: block;
+    margin: 25px auto;
+    max-height: 90%;
+    max-width: 90%;
 }
-
-
-#head h5{
-  font-size: 18px;
-  color: #EA663B;
-  text-align: center;
-  font-weight: lighter;
+#head h5 {
+    font-size: 18px;
+    color: #EA663B;
+    text-align: center;
+    font-weight: lighter;
 }
-
-#line-widget{
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  #widget{
+#line-widget {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    #widget {
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+}
+#head-social {
     margin-left: 20px;
-    padding-right: 20px;
-  }
+    text-align: center;
 }
-#head-social{
-    margin-left: 20px;
-}
-#head-social a{
-    margin-left: 25px;
+#head-social a {
+    margin-right: 25px;
     display: inline-block;
 }
-
 #head-cont {
     padding-bottom: 15px;
-    
-    form input{
-      border-radius: 3px;
-      background-color: $color-gris-claro;
-      font-size: 15px;
-      height: 30px;
-      width: 85%;
-      margin-top: 15px;
-      margin-left: 20px;
-    } 
+    form input {
+        border-radius: 3px;
+        background-color: $color-gris-claro;
+        font-size: 15px;
+        height: 30px;
+        width: 85%;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
 }
-
-#head-cont a{
+#head-cont a {
     text-decoration: none;
     color: #797979;
 }
-
-#head-articule h6, #head-articule a{
-  margin-left: 20px;
-  line-height: 1px;
-    
+#head-articule h6, #head-articule a {
+    margin-left: 20px;
+    line-height: 1px;
 }
-#head-articule h6{
+#head-articule h6 {
     margin-bottom: 13px;
 }
-#head-articule ul li a{
-      &:hover{
+#head-articule ul li a {
+    &:hover {
         color: white;
     }
 }
-
-ul{
+ul {
     padding-left: 0;
     line-height: 30px;
 }
 
-
-@media all and (max-width: 768px){
-
-    .col{
+@media all and (max-width: 1024px) {
+    .col {
         display: inline-block;
         width: 100%;
         figure, #head-cont {
             text-align: center;
-            form{
+            form {
                 display: none;
             }
-            }img{
+        }
+        img {
             width: 55%;
-            
         }
     }
-
-    #head-social{
+    #head-social {
         margin-left: -35px;
-        } a{
+    }
+    #head h3 {
+        font-size: 23px;
+    }
+    #head h5 {
+        font-size: 23px;
+        margin: 5px 0;
+    }
+    .head-img{
+        max-width: 20%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    #head-social{
+        max-width: 60%;
+        margin: auto;
+        padding-right: 8px;
+        min-width: 400px;
+    }
+    #head-social a{
+        margin: 0;
+    }
+    .division-line img{
+        width: 300px;
+    }
+    a {
         width: 10%;
         height: 10%;
     }
-
-    .col:before{
+    .col:before {
         content: none;
     }
-
-    .social-bar, 
-    #widget, #head-articule {
+    .social-bar, #widget, #head-articule {
         display: none;
     }
-
-    .sidebar{
-         background: #333333;
+    .sidebar {
+        background: #333333;
     }
-    
     .content {
         padding: 0 20px;
     }
-
-    .notes img{
+    .notes img {
         width: 100%;
     }
-    .box-com, .box-form{
+    .box-com, .box-form {
         width: 100%;
     }
-  
-    
 }
-
-
