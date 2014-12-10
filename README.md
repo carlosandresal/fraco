@@ -47,3 +47,12 @@ Crea un servidor y abre una nueva pestaña en el navegador con la url: *http://l
 
 Crea una nueva carpeta en el root del proyecto con el nombre **dist**, dejando aquí la versión final para deployar en cualquier hosting
 
+###Agradecimientos
+
+Queremos agradecer a los estudiantes que trabajaron en este proyecto y a [CoderHouse](http://www.coderhouse.com) por organizarlo.
+
+- Claudia Revollo: [@clox2_ok](https://twitter.com/clox2_ok)
+- Ludmila Tamayo: [@Luddm](https://twitter.com/Luddm)
+- Luis Revollo: [@lrrevollo](https://twitter.com/lrrevollo)
+- Lucio Di Ruggiero: [@LucioDiruggiero](https://twitter.com/LucioDiruggiero)
+- Sebastian Pérez: [@perezsebastianm](https://twitter.com/perezsebastianm) (Instructor)
